@@ -5,7 +5,7 @@ import uuid
 from telegram import Update, InlineQueryResultArticle, InputTextMessageContent
 from telegram.ext import ApplicationBuilder, CommandHandler, InlineQueryHandler, ContextTypes
 
-TOKEN = "Token"
+TOKEN = "توکن_خودت_اینجا"
 
 conn = sqlite3.connect("axes.db", check_same_thread=False)
 cursor = conn.cursor()
@@ -94,5 +94,4 @@ app.add_handler(CommandHandler("top", top))
 app.add_handler(InlineQueryHandler(inline_query))
 
 print("ربات فعال شد")
-await app.run_polling()� فعال شد")
 await app.run_polling()
